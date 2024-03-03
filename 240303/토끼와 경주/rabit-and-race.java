@@ -90,7 +90,7 @@ public class Main {
 				// 끝내는로직
 				// 마지막 명령
 				// 경주를 진행하며 얻은 점수 중 가장 높은 점수 출력하기
-				int scoreMax = Integer.MIN_VALUE;
+				long scoreMax = Integer.MIN_VALUE;
 				for (int i = 0; i < rabitList.size(); i++) {
 					scoreMax = Math.max(scoreMax, rabitList.get(i).score);
 				}
@@ -333,9 +333,9 @@ public class Main {
 		int y;
 		int d;
 		int moveCount;
-		int score;
+		long score;
 
-		public Rabit(int pid, int x, int y, int d, int moveCount, int score) {
+		public Rabit(int pid, int x, int y, int d, int moveCount, long score) {
 			super();
 			this.pid = pid;
 			this.x = x;
